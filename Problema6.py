@@ -1,15 +1,17 @@
-
 def palindroma(palabra):
-    a=list(palabra)
-    b=[]
-    i=len(a)
-    j=0
+    j = 0
+    k= len(palabra)-1
+    aux=''
+    palabra=palabra.lower()
+    while(j < len(palabra)):
+        aux+=palabra[k]
+        j += 1
+        k -=1
+    if(palabra==aux):
+        print('La palabra ',palabra,' es palindroma')
+    else:
+        print('La palabra ',palabra,' no es palindroma')
 
-    while i>=0:
-        b[i]=b[j]
-        i-=1
-        i+=1
-
-    return a
+    return palabra==aux
 
 
