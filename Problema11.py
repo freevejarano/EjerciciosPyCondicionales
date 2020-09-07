@@ -8,6 +8,7 @@ def fibonacci(n):
         aux=a+b
         a=b
         b=aux
+    print('Los primeros ',n,' numeros de la serie de fibonacci son:')
+    print(c)
     return c
 
-print(fibonacci(1000))
